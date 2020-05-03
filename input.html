@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <title>word search</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
-    <body>
+        <body>
         <!-- header -->
         <nav class="navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark">
             <a class="navbar-brand" href="#" style="font-size:25px; font-style:italic;">Programming Word Search</a>
@@ -44,12 +45,12 @@
                 <!-- row 中央寄せ -->
                     <form action="input.php" method="POST">
                         <h3>タイトル</h3>
-                        <input type="text" name="title">
+                        <input class="input" type="text" name="title">
                         <h3>内容</h3>
-                        <textarea name="body" cols="30" rows="10"></textarea>
+                        <textarea name="body"></textarea>
                         <h3>カテゴリ</h3>
-                        <input type="text" name="category">
-                        <button type="submit">登録する</button>
+                        <input class="input-category" type="text" name="category">
+                        <button type="submit" class="btn btn-outline-success my-2 my-sm-0">登録</button>
                     </form>
                 </div>
             </div>
