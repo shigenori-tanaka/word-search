@@ -3,11 +3,11 @@ form h3{
 }
 
 .input{
-    width:600px;
+    width:70%;
 }
 
 textarea{
-    width:600px;
+    width:70%;
     height:400px;
 }
 
@@ -18,5 +18,6 @@ form .btn{
 }
 
 .input-category{
+    width: 50%;
     margin-bottom:20px;   
 }
