@@ -21,8 +21,9 @@
                 <div class="col text-center">
                 <!-- row 中央寄せ -->
                     <h2 style="color:lightgreen;">-- Edit --</h2>
-                    <form action="input_DB.php" method="POST">
+                    <form action="edit_DB.php" method="POST">
                         <h3>タイトル</h3>
+                        <input type="hidden" name="id" value="<?php echo $edit['id'] ?>">
                         <input class="input" type="text" name="title" value="<?php echo $edit['title']?>">
                         <h3>内容</h3>
                         <textarea name="body"><?php echo $edit['body']?></textarea>
