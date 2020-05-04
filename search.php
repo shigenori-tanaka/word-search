@@ -12,18 +12,16 @@
             require_once("DBconnect.php");
             require_once("template/tmp.header.php");
         ?>
-        <?php 
-        $aa = $_POST["search"];
-        $search = $PDO->query("SELECT * FROM words WHERE title LIKE '%{$_POST["search"]}%' "); 
-        ?>            
+        <?php $search = $PDO->query("SELECT * FROM words WHERE title LIKE '%{$_POST["search"]}%' "); ?>            
         
-
-        <?php while($searchArray = $search->fetch()): ?>
-            <p><?php echo $searchArray["title"]; ?></p>
-            <p><?php echo $searchArray["body"]; ?></p>
-            <p><?php echo $searchArray["category"]; ?></p>
-            <hr>
-        <?php endwhile; ?>
+        <article style="width:95%; margin:0 auto; ">
+            <?php while($searchArray = $search->fetch()): ?>
+                <p><?php echo $searchArray["title"]; ?></p>
+                <p><?php echo $searchArray["body"]; ?></p>
+                <p><?php echo $searchArray["category"]; ?></p>
+                <hr>
+            <?php endwhile; ?>
+        </article>
     </body>
 </html>
 
