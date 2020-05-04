@@ -15,8 +15,8 @@
         <?php $index_DB = $PDO->query("SELECT * FROM words ORDER BY created_at DESC"); ?>
         <article style="width:95%; margin:0 auto; ">
             <?php while($index = $index_DB->fetch()): ?>
-                <p style="word-wrap:break-word;"> <?php echo $index["title"]; ?> </p>
-                <p style="word-wrap:break-word;"> <?php echo $index["body"]; ?> </p>
+                <p style="word-wrap:break-word;"> <?php echo htmlspecialchars($index["title"]); ?> </p>
+                <p style="word-wrap:break-word;"> <?php echo htmlspecialchars($index["body"]); ?> </p>
                 <a class="btn btn-outline-success btn-sm" href="edit.php?id=<?php echo $index["id"] ?>" role="button" style="margin-right: 10px;">編集</a>
                 <form action="delete.php?id=<?php echo $index["id"] ?>" onsubmit="return confirm_test()" method="POST" style="display:inline-block;">
                     <button class="btn btn-outline-secondary btn-sm" type="submit">削除</button>
