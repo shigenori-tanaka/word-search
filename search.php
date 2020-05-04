@@ -12,8 +12,9 @@
             require_once("DBconnect.php");
             require_once("template/tmp.header.php");
         ?>
-        <?php $search = $PDO->query("SELECT * FROM words WHERE title = 'エディット' "); 
-             
+        <?php 
+        $aa = $_POST["search"];
+        $search = $PDO->query("SELECT * FROM words WHERE title LIKE '%{$_POST["search"]}%' "); 
         ?>            
         
 
