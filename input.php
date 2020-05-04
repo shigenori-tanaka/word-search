@@ -28,7 +28,8 @@
                             <option value="mysql">mysql</option>
                             <option value="bootstrap">bootstrap</option>
                         </select>
-                        <button type="submit" class="btn btn-outline-success my-2 my-sm-0">登録</button>
+                        <button type="submit" class="btn btn-outline-success btn-sm">登録</button>
+                        <a class="btn btn-outline-secondary btn-sm" href="#" role="button">一覧に戻る</a>
                     </form>
                 </div>
             </div>
