@@ -18,10 +18,20 @@
                 <p style="word-wrap:break-word;"> <?php echo $index["title"]; ?> </p>
                 <p style="word-wrap:break-word;"> <?php echo $index["body"]; ?> </p>
                 <a class="btn btn-outline-success btn-sm" href="edit.php?id=<?php echo $index["id"] ?>" role="button" style="margin-right: 10px;">編集</a>
-                <a class="btn btn-outline-secondary btn-sm" href="delete.php?id=<?php echo $index["id"] ?>" role="button">削除</a>
+                <form action="delete.php?id=<?php echo $index["id"] ?>" onsubmit="return confirm_test()" method="POST" style="display:inline-block;">
+                    <button class="btn btn-outline-secondary btn-sm" type="submit">削除</button>
+                </form>
+                    
                 <hr>
             <?php endwhile ?>
         </article>
+
+        <script>
+            function confirm_test() {
+            var select = confirm("本当に削除しますか？\n「OK」で削除\n「キャンセル」で中止");
+            return select;
+            }
+        </script>
             
         
 

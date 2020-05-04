@@ -22,24 +22,37 @@
                 <div class="col text-center">
                 <!-- row 中央寄せ -->
                     <h2 style="color:lightgreen;">-- Edit --</h2>
-                    <form action="edit_DB.php" method="POST">
+                    <form action="edit_DB.php" method="POST" id="form">
                         <h3>タイトル</h3>
                         <input type="hidden" name="id" value="<?php echo $edit['id'] ?>">
                         <input class="input" type="text" name="title" value="<?php echo $edit['title']?>">
                         <h3>内容</h3>
                         <textarea name="body"><?php echo $edit['body']?></textarea>
                         <h3>カテゴリ</h3>
-                        <select class="input-category" name="category"?>">
+                        <select class="input-category" name="category"?>
                             <option><?php echo $edit['category']?></option>
                             <option value="HTML&CSS">HTML & CSS</option>
                             <option value="php">php</option>
                             <option value="mysql">mysql</option>
                             <option value="bootstrap">bootstrap</option>
                         </select>
-                        <button type="submit" class="btn btn-outline-success btn-sm">登録</button>
-                        <a class="btn btn-outline-secondary btn-sm" href="#" role="button">削除</a>
-                        <a class="btn btn-outline-primary btn-sm" href="index.php" role="button">一覧に戻る</a>
                     </form>
+                    <button form="form" type="submit" class="btn btn-outline-success btn-sm">登録</button>
+                    <form action="delete.php?id=<?php echo $edit["id"] ?>" onsubmit="return confirm_test()" method="POST" style="display:inline-block;">
+                        <button class="btn btn-outline-secondary btn-sm" type="submit">削除</button>
+                    </form>
+                    <a class="btn btn-outline-primary btn-sm" href="index.php" role="button">一覧に戻る</a>
+                    
+                    
+                    <!-- 削除アラート -->
+                    <script>
+                        function confirm_test() {
+                        var select = confirm("本当に削除しますか？\n「OK」で削除\n「キャンセル」で中止");
+                        return select;
+                        }
+                    </script>
+                    <!-- end 削除アラート -->
+                    
                 </div>
             </div>
         </div>
