@@ -12,14 +12,17 @@
             require_once("DBconnect.php");
             require_once("template/tmp.header.php");
         ?>
+        <?php $search = $PDO->query("SELECT * FROM words WHERE title = 'エディット' "); 
+             
+        ?>            
+        
 
-        <?php $serach = $PDO->query("SELECT * FROM words Where title LIKE '%{$_POST["search"]}%' "); ?>            
-        <?php while($serachArray = $serach->fetch()): ?>
-            <p><?php echo $serachArray["title"]; ?></p>
-            <p><?php echo $serachArray["body"]; ?></p>
-            <p><?php echo $serachArray["category"]; ?></p>
+        <?php while($searchArray = $search->fetch()): ?>
+            <p><?php echo $searchArray["title"]; ?></p>
+            <p><?php echo $searchArray["body"]; ?></p>
+            <p><?php echo $searchArray["category"]; ?></p>
             <hr>
-        <?php endwhile ?>
+        <?php endwhile; ?>
     </body>
 </html>
 
