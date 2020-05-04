@@ -29,7 +29,7 @@
                             <option value="bootstrap">bootstrap</option>
                         </select>
                         <button type="submit" class="btn btn-outline-success btn-sm">登録</button>
-                        <a class="btn btn-outline-secondary btn-sm" href="#" role="button">一覧に戻る</a>
+                        <a class="btn btn-outline-primary btn-sm" href="#" role="button">一覧に戻る</a>
                     </form>
                 </div>
             </div>
