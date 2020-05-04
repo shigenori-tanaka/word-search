@@ -1,0 +1,25 @@
+form h3{
+    margin-top:20px;
+}
+
+.input{
+    width:70%;
+}
+
+textarea{
+    width:70%;
+    height:400px;
+}
+
+form .btn{
+    width:100px;
+    margin-right: 15px;
+    
+}
+
+ form .input-category{
+    display: block;
+    width: 40%;
+    margin:0 auto;
+    margin-bottom:20px;   
+}
