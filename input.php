@@ -13,10 +13,10 @@
 
         <!-- 入力欄 -->
         <div class="container">
-            <div class="rowr">
+            <div class="row">
                 <div class="col text-center">
                 <!-- row 中央寄せ -->
-                    <form action="input-do.php" method="POST">
+                    <form action="input_DB.php" method="POST">
                         <h3>タイトル</h3>
                         <input class="input" type="text" name="title">
                         <h3>内容</h3>
