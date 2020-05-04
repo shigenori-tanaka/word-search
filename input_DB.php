@@ -24,7 +24,7 @@
                     <p><?php echo $_POST["body"];?></p>
                     <h4>カテゴリ</h4>
                     <p><?php echo $_POST["category"];?></p>
-                    <a class="btn btn-outline-success my-2 my-sm-0" href="index.php" role="button">一覧に戻る</a>
+                    <a class="btn btn-outline-primary btn-sm" href="index.php" role="button">一覧に戻る</a>
                 </div>
             </div>
         </div>

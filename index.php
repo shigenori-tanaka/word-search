@@ -17,7 +17,7 @@
             <p style="word-wrap:break-word;"> <?php echo $index["title"]; ?> </p>
             <p style="word-wrap:break-word;"> <?php echo $index["body"]; ?> </p>
             <a class="btn btn-outline-success btn-sm" href="edit.php?id=<?php echo $index["id"] ?>" role="button" style="margin-right: 10px;">編集</a>
-            <a class="btn btn-outline-secondary btn-sm" href="delete.php" role="button">削除</a>
+            <a class="btn btn-outline-secondary btn-sm" href="delete.php?id=<?php echo $index["id"] ?>" role="button">削除</a>
             <hr>
         <?php endwhile ?>
         </article>
