@@ -23,6 +23,7 @@
                         <textarea name="body"></textarea>
                         <h3>カテゴリ</h3>
                         <select class="input-category" name="category">
+                            <option value="HTML&CSS">HTML & CSS</option>
                             <option value="php">php</option>
                             <option value="mysql">mysql</option>
                             <option value="bootstrap">bootstrap</option>
