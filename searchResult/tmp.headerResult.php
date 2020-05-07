@@ -13,8 +13,11 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">category</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="HTML&CSS.php">HTML & CSS</a>
-                    <a class="dropdown-item" href="#">PHP</a>
-                    <a class="dropdown-item" href="#">MySQL</a>
+                    <a class="dropdown-item" href="PHP.php">PHP</a>
+                    <a class="dropdown-item" href="mysql.php">MySQL</a>
+                    <a class="dropdown-item" href="bootstrap.php">bootstrap</a>
+                    <a class="dropdown-item" href="Heroku.php">Heroku</a>
+                    <a class="dropdown-item" href="other.php">その他</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -28,7 +31,7 @@
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" action="../search.php" method="POST">
-            <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search by title" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" name="search" placeholder="タイトルで検索" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
