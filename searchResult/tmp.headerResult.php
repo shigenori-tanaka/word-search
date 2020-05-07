@@ -23,8 +23,8 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">sort</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">昇順</a>
-                    <a class="dropdown-item" href="#">降順</a>
+                    <a class="dropdown-item" href="asc.php">昇順</a>
+                    <a class="dropdown-item" href="desc.php">降順</a>
                     <a class="dropdown-item" href="#">日付昇順</a>
                     <a class="dropdown-item" href="#">日付降順</a>
                 </div>
