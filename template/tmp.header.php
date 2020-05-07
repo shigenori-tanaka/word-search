@@ -17,6 +17,15 @@
                     <a class="dropdown-item" href="#">MySQL</a>
                 </div>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">sort</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">昇順</a>
+                    <a class="dropdown-item" href="#">降順</a>
+                    <a class="dropdown-item" href="#">日付昇順</a>
+                    <a class="dropdown-item" href="#">日付降順</a>
+                </div>
+            </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" action="./search.php" method="POST">
             <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search by title" aria-label="Search">
