@@ -35,6 +35,8 @@
                             <option value="php">php</option>
                             <option value="mysql">mysql</option>
                             <option value="bootstrap">bootstrap</option>
+                            <option value="Heroku">Heroku</option>
+                            <option value="その他">その他</option>
                         </select>
                     </form>
                     <button form="form" type="submit" class="btn btn-outline-success btn-sm">登録</button>
