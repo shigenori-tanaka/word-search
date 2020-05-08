@@ -22,6 +22,7 @@
                 <form action="delete.php?id=<?php echo $searchArray["id"] ?>" onsubmit="return confirm_test()" method="POST" style="display:inline-block;">
                     <button class="btn btn-outline-secondary btn-sm" type="submit">削除</button>
                 </form>
+                <hr>
             <?php endwhile; ?>
         </article>
     </body>

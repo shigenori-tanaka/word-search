@@ -18,14 +18,14 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h2 style="color:lightgreen;">-- Created!! --</h2>
+                    <h2 style="color:lightgreen;">-- Edit completed!! --</h2>
                     <h4>タイトル</h4>
-                    <p><?php echo $_POST["title"];?></p>
+                    <p style="word-wrap:break-word;"><?php echo htmlspecialchars($_POST["title"]);?></p>
                     <h4>内容</h4>
-                    <p><?php echo $_POST["body"];?></p>
+                    <p style="word-wrap:break-word; white-space: pre-wrap; text-align:left"><?php echo htmlspecialchars($_POST["body"]);?></p>
                     <h4>カテゴリ</h4>
                     <p><?php echo $_POST["category"];?></p>
-                    <a class="btn btn-outline-primary btn-sm" href="index.php" role="button">一覧に戻る</a>
+                    <a class="btn btn-outline-success my-2 my-sm-0" href="index.php" role="button">一覧に戻る</a>
                 </div>
             </div>
         </div>
